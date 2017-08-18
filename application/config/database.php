@@ -81,8 +81,8 @@ $db['default'] = array(
 	'database' => 'test',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
-	'pconnect' => TRUE,
-	'db_debug' => TRUE,
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
@@ -92,5 +92,5 @@ $db['default'] = array(
 	'compress' => FALSE,
 	'stricton' => FALSE,
 	'failover' => array(),
-//	'save_queries' => TRUE
+	'save_queries' => TRUE
 );
